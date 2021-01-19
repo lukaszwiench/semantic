@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <section id="colors">
+      <button id="przycisk" onclick="przelaczTlo();">Przelacz</button>
+    </section>
+    <aside id="kolory">
+      <button onclick="zmienTlo(`yellow`);">żółte</button>
+      <button onclick="zmienTlo(`rgb(34, 51, 51)`);">zielone</button>
+    </aside>
+    <article>Article</article>
+    <footer>Footer</footer>
+
+    <script type="text/javascript">
+      function zmienTlo(kolor) {
+        document.getElementById("kolory").style.backgroundColor = kolor;
+      }
+    </script>
+
+    <script type="text/javascript">
+      function przelaczTlo() {
+         document.getElementById("colors").style.backgroundColor = "green";
+        document.getElementById("przycisk").innerHTML = "zielony";
+     
+      }
+    </script>
+  </body>
+</html>
