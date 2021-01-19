@@ -23,6 +23,8 @@ nav {
   font-size: 50px;
   color: white;
   text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 section {
@@ -38,11 +40,16 @@ section {
   text-align: center;
 }
 
-aside {
+.content {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  height: 800px;
+
+}
+
+aside {
+  display: block;
   float: right;
   width: 40%;
   color: white;
@@ -76,24 +83,26 @@ footer {
 }
 
 .zolte {
-  width: 200px;
+  width: 120px;
   display: block;
   height: 50px;
-  color:white;
+  color: white;
   background: rgb(223, 223, 8);
-  font-size:25px
+  font-size: 25px;
+  margin: 10px;
 }
 .zielone {
   display: block;
-  width: 200px;
+  width: 120px;
   height: 50px;
   font-size: 25px;
   color: white;
   background-color: green;
+  margin: 10px;
 }
 
 #przycisk {
-  width: 200px;
+  width: 120px;
   height: 40px;
   font-size: 25px;
   background-color: #231223;

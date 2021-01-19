@@ -13,9 +13,12 @@
       <button id="przycisk" onclick="przelaczTlo();">Przełącz</button>
     </section>
     <aside id="kolory">
-      <button class="zolte" onclick="zmienTlo(`yellow`);">żółte</button>
-      <br>
-      <button class="zielone"onclick="zmienTlo(`rgb(34, 51, 51)`);">zielone</button>
+      <div class="content">
+        <button class="zolte" onclick="zmienTlo(`yellow`);">żółte</button>
+        <button class="zielone" onclick="zmienTlo(`rgb(34, 51, 51)`);">
+          zielone
+        </button>
+      </div>
     </aside>
     <article>Article</article>
     <footer>Footer</footer>
@@ -31,13 +34,12 @@
         if (document.getElementById("przycisk").innerHTML == "Przełącz") {
           document.getElementById("colors").style.backgroundColor = "yellow";
           document.getElementById("przycisk").innerHTML = "Żółty";
-          document.getElementById("przycisk").style.backgroundColor = "yellow"
-        } else if(document.getElementById("przycisk").innerHTML == "Żółty") {
+          document.getElementById("przycisk").style.backgroundColor = "yellow";
+        } else if (document.getElementById("przycisk").innerHTML == "Żółty") {
           document.getElementById("colors").style.backgroundColor = "green";
           document.getElementById("przycisk").innerHTML = "Zielony";
-          document.getElementById("przycisk").style.backgroundColor = "green"
-        }
-        else{
+          document.getElementById("przycisk").style.backgroundColor = "green";
+        } else {
           document.getElementById("colors").style.backgroundColor = " #231223";
           document.getElementById("przycisk").innerHTML = "Przełącz";
           document.getElementById("przycisk").style.backgroundColor = "#231223";
