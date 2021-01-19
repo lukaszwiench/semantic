@@ -12,7 +12,6 @@ header {
   color: white;
   text-align: center;
   font-size: 50px;
-
 }
 
 nav {
@@ -24,7 +23,6 @@ nav {
   font-size: 50px;
   color: white;
   text-align: center;
-
 }
 
 section {
@@ -46,12 +44,10 @@ aside {
   align-items: center;
   float: right;
   width: 40%;
-  background: #113807;
   color: white;
   font-size: 50px;
   height: 800px;
   text-align: center;
-
 }
 
 article {
@@ -65,7 +61,6 @@ article {
   color: white;
   height: 400px;
   text-align: center;
- 
 }
 
 footer {
@@ -79,9 +74,27 @@ footer {
   text-align: center;
 }
 
-.zolte{
-    width: 120px;
+.zolte {
+    width:150px;
+  display: block;
+
 }
-.zielone{
-    width: 120px;
+.zielone {
+    display: block;
+  width: 120px;
+}
+
+#przycisk{
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    background-color:#231223;
+    color: white;
+    border: #6a1f6a;
+    animation: 1s;
+}
+
+#przycisk:hover{
+    width: 220px;
+    height: 50px;
 }
