@@ -1,9 +1,11 @@
 body {
-  margin: 0;
+    box-sizing: border-box;
+  margin: 0 auto;
   background: rgb(34, 51, 51);
 }
 
 header {
+margin-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +47,7 @@ section {
   justify-content: center;
   align-items: center;
   height: 800px;
-
+  float: left;
 }
 
 aside {
@@ -114,4 +116,25 @@ footer {
 #przycisk:hover {
   width: 220px;
   height: 50px;
+}
+
+@media screen and (max-width:768px){
+    header{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 55%;
+    }
+    article{
+        width: 45%;
+    }
+    section{
+        width: 45%;
+    }
+    footer{
+        width: 100%;
+    }
 }
