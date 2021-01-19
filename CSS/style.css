@@ -40,7 +40,8 @@ section {
 
 aside {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
   float: right;
   width: 40%;
@@ -75,26 +76,33 @@ footer {
 }
 
 .zolte {
-    width:150px;
+  width: 200px;
   display: block;
-
+  height: 50px;
+  color:white;
+  background: rgb(223, 223, 8);
+  font-size:25px
 }
 .zielone {
-    display: block;
-  width: 120px;
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  color: white;
+  background-color: green;
 }
 
-#przycisk{
-    width: 200px;
-    height: 40px;
-    font-size: 25px;
-    background-color:#231223;
-    color: white;
-    border: #6a1f6a;
-    animation: 1s;
+#przycisk {
+  width: 200px;
+  height: 40px;
+  font-size: 25px;
+  background-color: #231223;
+  color: white;
+  border: #6a1f6a;
+  animation: 1s;
 }
 
-#przycisk:hover{
-    width: 220px;
-    height: 50px;
+#przycisk:hover {
+  width: 220px;
+  height: 50px;
 }
