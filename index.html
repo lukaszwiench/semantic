@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
     <title>Document</title>
   </head>
   <body>
     <header>Header</header>
-    <nav>Navigation</nav>
+    <nav>
+      <button id="txt" onclick="klik();">Navigation</button>
+    </nav>
     <section id="colors">
       <button id="przycisk" onclick="przelaczTlo();">Przełącz</button>
     </section>
     <aside id="kolory">
-      <div class="content">
-        <button class="zolte" onclick="zmienTlo(`yellow`);">żółte</button>
-        <button class="zielone" onclick="zmienTlo(`rgb(34, 51, 51)`);">
-          zielone
-        </button>
-      </div>
+      <button class="zolte" onclick="zmienTlo(`yellow`);">żółte</button>
+      <button class="zielone" onclick="zmienTlo(`green`);">zielone</button>
     </aside>
-    <article>Article</article>
-    <footer>Footer</footer>
+    <article>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </article>
+    <footer id="lol">
+      <button class="button" onclick="zmienTloZParamThis();">zmien tlo</button>
+    </footer>
 
     <script type="text/javascript">
       function zmienTlo(kolor) {
@@ -44,6 +51,17 @@
           document.getElementById("przycisk").innerHTML = "Przełącz";
           document.getElementById("przycisk").style.backgroundColor = "#231223";
         }
+      }
+    </script>
+    <script type="text/javascript">
+      function klik() {
+        document.getElementById("txt").style.fontFamily = "Sans-Serif";
+      }
+    </script>
+    <script>
+      function zmienTloZParamThis()
+      {
+        document.getElementById("lol").style.backgroundColor = "red";
       }
     </script>
   </body>
